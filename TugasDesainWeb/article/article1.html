@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Tugas Praktikum</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="container" id="header">
+	<nav class="kiri" id="nav">
+			<a href="../index.html">HOME</a>
+			<a href="../article.html" class="active">ARTICLES</a>
+			<a href="../contactUs.html">CONTACT US</a>
+			<a href="javascript:void(0);" style="font-size: 15px;" class="icon" onclick="myFuction()">&#9776;</a>
+	</nav>
+	<div class="kanan" id="kanan">
+	</div>
+	<header class="tengah" id="head">
+		<img class="logo" alt="Logo" src="../images/logo.png">
+	</header>
+</div>
+<div class="container" id="main">
+	<div id="content">
+		<div class="article">
+			<article>
+				<header>
+					<h1>Lorem ipsum dolor sit amet</h1>
+				</header>
+			</article>
+			<article>
+			<img class="imgarticle" alt="Article 1" src="../images/artikel1.jpg">
+				<h6>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vulputate mollis est vitae porttitor. Sed quis venenatis arcu, vitae condimentum nulla. Phasellus risus neque, convallis sit amet risus a, sodales vulputate massa. Aenean vitae nunc vel dui porttitor porta. Fusce at arcu neque. Etiam eu tortor tortor. Nam in dignissim turpis, eu malesuada lacus.<br>
+					Curabitur luctus rhoncus lacus a porttitor. Pellentesque dictum, nunc et commodo maximus, libero mauris sodales ligula, et cursus tortor nulla ut massa. Integer et dui justo. Fusce eget justo eu nisl lacinia venenatis. Nulla pellentesque, dolor vitae rhoncus tempus, odio mi tempus dolor, imperdiet gravida urna nunc vel urna. Morbi placerat placerat turpis, at pretium orci aliquet vel. Phasellus ut leo et tortor cursus placerat sit amet id lectus. Etiam aliquet sodales facilisis. Nullam aliquam lacus eu turpis pellentesque scelerisque. Pellentesque facilisis fringilla risus. Proin blandit lectus in sem iaculis, et elementum enim mattis.<br>
+					Morbi interdum mattis lacus, at viverra ligula venenatis nec. Morbi lobortis dictum turpis, pharetra interdum enim viverra sed. Integer bibendum iaculis volutpat. Pellentesque eget consequat ligula, congue dignissim erat. Nam vel malesuada lacus, vitae sodales libero. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse lacinia elit sed rhoncus finibus. Praesent pellentesque pharetra nunc eget fermentum. Maecenas ac hendrerit dui, ut consequat purus. Suspendisse vitae eros eu urna egestas mattis. Suspendisse sit amet massa porttitor, venenatis nulla quis, lobortis augue. Donec sollicitudin eleifend metus, pharetra aliquam lorem aliquet id.<br>
+					Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris pretium dolor lectus, non placerat justo rutrum et. Morbi porttitor ipsum non elit pretium iaculis. Quisque eget iaculis diam. Aliquam mattis congue tempus. Praesent a aliquam erat, id sagittis magna. Vestibulum malesuada, urna sit amet dictum accumsan, lorem leo mollis purus, ac mollis dolor est quis turpis. Nullam erat felis, sagittis vel neque vitae, viverra vehicula nunc. In nec sapien libero. Donec fringilla sodales posuere. Nam quam augue, aliquet et accumsan sit amet, porta sit amet leo. Quisque consequat quam eu laoreet dignissim. Aenean placerat enim sed magna ultricies congue.
+				</h6>
+			</article>
+		</div>
+	</div>
+	<aside id="sidebar">
+		<div class="popular">
+			<div class="titleside">POPULAR</div>
+			<img alt="Article 4" src="../images/artikel4.jpg" class="imgpopular">
+			<img alt="Article 2" src="../images/artikel2.jpg" class="imgpopular">
+			<img alt="Article 1" src="../images/artikel1.jpg" class="imgpopular">
+			<img alt="Article 3" src="../images/artikel3.jpg" class="imgpopular">
+		</div>
+	</aside>
+</div>
+<footer class="container" id="footer"><div class="footer">Copyright Andruw Oei 2017</div></footer>
+<script>
+function myFuction() {
+    var x = document.getElementById("nav");
+    if (x.className === "kiri") {
+        x.className += " responsive";
+    } else {
+        x.className = "kiri";
+    }
+    var x = document.getElementById("head");
+    if (x.className === "tengah") {
+        x.className += " hilang";
+    } else {
+        x.className = "tengah";
+    }
+    var x = document.getElementById("kanan");
+    if (x.className === "kanan") {
+        x.className += " hilang";
+    } else {
+        x.className = "kanan";
+    }
+}
+</script>
+</body>
+</html>

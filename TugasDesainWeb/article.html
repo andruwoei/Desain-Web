@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Tugas Praktikum</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container" id="header">
+	<nav class="kiri" id="nav">
+			<a href="index.html">HOME</a>
+			<a href="article.html" class="active">ARTICLES</a>
+			<a href="contactUs.html">CONTACT US</a>
+			<a href="javascript:void(0);" style="font-size: 15px;" class="icon" onclick="myFuction()">&#9776;</a>
+	</nav>
+	<div class="kanan" id="kanan">
+	</div>
+	<header class="tengah" id="head">
+		<img class="logo" alt="Logo" src="images/logo.png">
+	</header>
+</div>
+<div class="container" id="main">
+	<div id="content">
+		<div class="article">
+			<article>
+				<header>
+					<h1>Lorem ipsum dolor sit amet</h1>
+				</header>
+			</article>
+			<article>
+			<img class="imgarticle" alt="Article 1" src="images/artikel1.jpg">
+				<h6>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vulputate mollis est vitae porttitor. Sed quis venenatis arcu, vitae condimentum nulla. Phasellus risus neque, convallis sit amet risus a, sodales vulputate massa. Aenean vitae nunc vel dui porttitor porta. Fusce at arcu neque. Etiam eu tortor tortor. Nam in dignissim turpis, eu malesuada lacus.
+				</h6>
+				<a href="article/article1.html"><div class="readmore">Read More ....</div></a>
+			</article>
+		</div>
+		
+		<div class="article">
+			<article>
+				<header>
+					<h1>Lorem ipsum dolor sit amet</h1>
+				</header>
+			</article>
+			<article>
+			<img class="imgarticle" alt="Article 2" src="images/artikel2.jpg">
+				<h6>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vulputate mollis est vitae porttitor. Sed quis venenatis arcu, vitae condimentum nulla. Phasellus risus neque, convallis sit amet risus a, sodales vulputate massa. Aenean vitae nunc vel dui porttitor porta. Fusce at arcu neque. Etiam eu tortor tortor. Nam in dignissim turpis, eu malesuada lacus.
+				</h6>
+				<a href="article/article2.html"><div class="readmore">Read More ....</div></a>
+			</article>
+		</div>
+
+		<div class="article">
+			<article>
+				<header>
+					<h1>Lorem ipsum dolor sit amet</h1>
+				</header>
+			</article>
+			<article>
+			<img class="imgarticle" alt="Article 3" src="images/artikel3.jpg">
+				<h6>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vulputate mollis est vitae porttitor. Sed quis venenatis arcu, vitae condimentum nulla. Phasellus risus neque, convallis sit amet risus a, sodales vulputate massa. Aenean vitae nunc vel dui porttitor porta. Fusce at arcu neque. Etiam eu tortor tortor. Nam in dignissim turpis, eu malesuada lacus.
+				</h6>
+				<a href="article/article3.html"><div class="readmore">Read More ....</div></a>
+			</article>
+		</div>
+
+		<div class="article">
+			<article>
+				<header>
+					<h1>Lorem ipsum dolor sit amet</h1>
+				</header>
+			</article>
+			<article>
+			<img class="imgarticle" alt="Article 4" src="images/artikel4.jpg">
+				<h6>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vulputate mollis est vitae porttitor. Sed quis venenatis arcu, vitae condimentum nulla. Phasellus risus neque, convallis sit amet risus a, sodales vulputate massa. Aenean vitae nunc vel dui porttitor porta. Fusce at arcu neque. Etiam eu tortor tortor. Nam in dignissim turpis, eu malesuada lacus.
+				</h6>
+				<a href="article/article4.html"><div class="readmore">Read More ....</div></a>
+			</article>
+		</div>
+	</div>
+	<aside id="sidebar">
+		<div class="popular">
+			<div class="titleside">POPULAR</div>
+			<img alt="Article 4" src="images/artikel4.jpg" class="imgpopular">
+			<img alt="Article 2" src="images/artikel2.jpg" class="imgpopular">
+			<img alt="Article 1" src="images/artikel1.jpg" class="imgpopular">
+			<img alt="Article 3" src="images/artikel3.jpg" class="imgpopular">
+		</div>
+	</aside>
+</div>
+<footer class="container" id="footer"><div class="footer">Copyright Andruw Oei 2017</div></footer>
+<script>
+function myFuction() {
+    var x = document.getElementById("nav");
+    if (x.className === "kiri") {
+        x.className += " responsive";
+    } else {
+        x.className = "kiri";
+    }
+    var x = document.getElementById("head");
+    if (x.className === "tengah") {
+        x.className += " hilang";
+    } else {
+        x.className = "tengah";
+    }
+    var x = document.getElementById("kanan");
+    if (x.className === "kanan") {
+        x.className += " hilang";
+    } else {
+        x.className = "kanan";
+    }
+}
+</script>
+</body>
+</html>
